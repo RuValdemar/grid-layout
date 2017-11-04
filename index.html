@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS GRID</title>
+	<style>
+		.super-container {
+			margin: 2em auto;
+			width: 90%;
+			border: 2px solid red;
+		}
+		.container {
+			display: flex;
+			flex-wrap: wrap;
+			margin: -5px;	
+		}
+
+		body { overflow-x: hidden; }
+
+		p { 
+			width: calc(25% - 10px);
+			margin: 5px;
+			background-color: yellow; 
+		}
+
+		@supports (grid-template-columns: initial) { 
+			/*.container {
+				display: grid;
+				grid-template-columns: repeat(4,1fr);
+				grid-gap: 10px;
+				margin: 0;
+			}
+
+			p { 
+				margin: 0;
+				width: 100%;
+			}*/
+		}
+	</style>
+</head>
+<body>
+	<div class="super-container">
+		<div class="container">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit ea, nihil recusandae, incidunt, velit, esse consequatur molestias consectetur hic asperiores unde. Error minima ab fugit at inventore ipsam numquam culpa! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam inventore sequi voluptas natus consequuntur. Minima architecto mollitia cum ullam eius doloremque, sint alias, voluptatum facilis, corrupti fuga tenetur. Cum, iusto.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit ea, nihil recusandae, incidunt, velit, esse consequatur molestias consectetur hic asperiores unde. Error minima ab fugit at inventore ipsam numquam culpa! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta repellendus illo, fuga placeat ad magnam dolorem neque officia magni facere nihil quibusdam aspernatur saepe dolore unde repudiandae at, perferendis ratione.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit ea, nihil recusandae, incidunt, velit, esse consequatur molestias consectetur hic asperiores unde. Error minima ab fugit at inventore ipsam numquam culpa! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem sint quisquam ab nam obcaecati harum quibusdam vero impedit non saepe dolores, fuga quis nisi minus est et blanditiis, sed magnam!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit ea, nihil recusandae, incidunt, velit, esse consequatur molestias consectetur hic asperiores unde. Error minima ab fugit at inventore ipsam numquam culpa! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde reprehenderit praesentium quidem incidunt quisquam facilis aut ex pariatur necessitatibus nostrum totam laboriosam fugit et corporis fugiat deserunt, adipisci asperiores provident!</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit ea, nihil recusandae, incidunt, velit, esse consequatur molestias consectetur hic asperiores unde. Error minima ab fugit at inventore ipsam numquam culpa! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente ullam, eveniet doloremque quod magnam, natus rem placeat quas similique voluptatem numquam! Eaque illo voluptatum perferendis excepturi doloribus. Suscipit, velit, dignissimos.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit ea, nihil recusandae, incidunt, velit, esse consequatur molestias consectetur hic asperiores unde. Error minima ab fugit at inventore ipsam numquam culpa! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat unde iste sunt, enim tempora? Minima similique soluta blanditiis eaque iure id, animi illo ratione repellat, autem odio repellendus, nihil quidem?</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit ea, nihil recusandae, incidunt, velit, esse consequatur molestias consectetur hic asperiores unde. Error minima ab fugit at inventore ipsam numquam culpa! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat unde iste sunt, enim tempora? Minima similique soluta blanditiis eaque iure id, animi illo ratione repellat, autem odio repellendus, nihil quidem?</p>
+		</div>
+	</div>
+</body>
+</html>
